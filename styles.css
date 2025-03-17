@@ -1851,7 +1851,15 @@ footer::before {
 .faq-toggle .minus {
     width: 2px;
     height: 16px;
+}
+
+.faq-item.active .faq-toggle .minus {
     transform: translate(-50%, -50%) rotate(90deg);
+    opacity: 0;
+}
+
+.faq-item.active .faq-toggle .plus {
+    transform: translate(-50%, -50%) rotate(180deg);
 }
 
 .faq-answer {
@@ -1870,11 +1878,6 @@ footer::before {
 .faq-item.active .faq-answer {
     padding: 0 2rem 2rem;
     max-height: 500px;
-}
-
-.faq-item.active .faq-toggle .minus {
-    transform: translate(-50%, -50%) rotate(0);
-    opacity: 0;
 }
 
 /* Responsive adjustments */
